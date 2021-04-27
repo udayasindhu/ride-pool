@@ -1,10 +1,17 @@
-# PartnerTracking
+# RidePool
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.1.
+This project was generated with Angular version 11.0.1.
 
-## Development server
+## Steps to check the output
+1) Go to project location in file manager and open command line prompt.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+2) Run `npm install`
+
+3) Run `ng serve`. 
+
+4) Navigate to `http://localhost:4200/` in any web browser.
+
+Note: The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 

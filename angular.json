@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "partner-tracking": {
+    "ride-pool": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/partner-tracking",
+            "outputPath": "dist/ride-pool",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -65,18 +65,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "partner-tracking:build"
+            "browserTarget": "ride-pool:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "partner-tracking:build:production"
+              "browserTarget": "ride-pool:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "partner-tracking:build"
+            "browserTarget": "ride-pool:build"
           }
         },
         "test": {
@@ -113,16 +113,19 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "partner-tracking:serve"
+            "devServerTarget": "ride-pool:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "partner-tracking:serve:production"
+              "devServerTarget": "ride-pool:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "partner-tracking"
+  "defaultProject": "ride-pool",
+  "cli": {
+    "analytics": "d1d2f94e-9f95-4a7b-99f1-e23b7127e3b8"
+  }
 }

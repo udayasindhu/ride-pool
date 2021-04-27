@@ -1,0 +1,181 @@
+.spacer {
+    flex: 1;
+}
+
+.header {
+    position: relative;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+
+.header img {
+    margin: 0 16px;
+}
+
+.header #logout {
+    height: 40px;
+    margin: 0 16px;
+}
+
+.header #logout:hover {
+    opacity: 0.8;
+}
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 225px;
+    position: fixed;
+    height: 90%;
+    overflow: hidden;
+    border-right: 1px solid lightgray;
+}
+
+.sidebar::-webkit-scrollbar {
+    width: 10px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background: lightgray;
+    border-radius: 10px;
+}
+
+.sidebar:hover{
+    overflow-y: scroll;
+}
+
+.sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+    border-bottom: 1px solid lightgray;
+}
+
+.sidebar a:hover {
+    background-color: #fff7ea;
+}
+
+.sidebar i {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 16px;
+}
+
+.sidebar input {
+    background-color: #F0F0F0;
+    border: none;
+    border-radius: 0px;
+    padding-left: 45px;
+}
+
+div.content {
+    margin-left: 225px;
+    padding: 1px 16px;
+    /* height: 1000px; */
+}
+
+.partner-name,
+.partner-details-content,
+.stops-content {
+    font-weight: bold;
+}
+
+.partner-info,
+.partner-details-header,
+.stops-header {
+    color: #666666;
+    font-size: smaller;
+}
+
+.stops-header,
+.stops-content {
+    margin-top: 10px;
+}
+
+.partner-info {
+    text-shadow: 0.5px 0 #c8c8c8;
+}
+
+.partner-info i {
+    color: #404040;
+    float: right;
+}
+
+.partner>b {
+    font-size: smaller;
+}
+
+.status-color {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+div.content>h4 {
+    margin-top: 30px;
+    margin-left: 25px;
+    font-weight: 600;
+}
+
+.call-partner {
+    float: right;
+    background: #F0B859;
+    border-radius: 25px;
+    color: black;
+    font-weight: bold;
+}
+
+.call-partner:focus {
+    outline: none;
+}
+
+.content .partner-details {
+    margin: 20px 25px 0px 25px;
+    height: 100px;
+    box-shadow: 0px 0px 0px 1px rgba(211, 211, 211, 1);
+}
+
+.partner-details .partner-details-header {
+    margin-top: 20px;
+}
+
+.partner-details .partner-details-content {
+    margin-top: -20px;
+}
+
+.content>p {
+    margin-left: 25px;
+}
+
+.content .map {
+    margin: 25px 25px 0px 25px;
+    height: 400px
+}
+
+@media screen and (max-width: 500px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .sidebar a {
+        float: left;
+        border-right: 1px solid lightgray;
+    }
+
+    div.content {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .sidebar a {
+        text-align: center;
+        float: none;
+    }
+}
